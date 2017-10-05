@@ -13,7 +13,6 @@ const Props = ({props}) => {
         <th>Required</th>
       </tr>
       </thead>
-
       <tbody>
       {
         Object.keys(props).map(key => {
@@ -35,6 +34,6 @@ const Props = ({props}) => {
 
 Props.propTypes = {
   props: PropTypes.object.isRequired
-}
+};
 
 export default Props;

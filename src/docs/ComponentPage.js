@@ -7,7 +7,7 @@ const ComponentPage = ({component}) => {
   const {name, description, props, examples} = component;
 
   return (
-    <div className="componentPage">
+    <div className="componentpage">
       <h2>{name}</h2>
       <p>{description}</p>
 
@@ -15,18 +15,18 @@ const ComponentPage = ({component}) => {
       {
         examples.length > 0 ?
           examples.map( example => <Example key={example.code} example={example} componentName={name} /> ) :
-          "No example exists."
+          "No examples exist."
       }
 
       <h3>Props</h3>
       {
-        props > 0 ?
+        props ?
           <Props props={props} /> :
           "This component accepts no props."
       }
     </div>
   )
-}
+};
 
 ComponentPage.propTypes = {
   component: PropTypes.object.isRequired
