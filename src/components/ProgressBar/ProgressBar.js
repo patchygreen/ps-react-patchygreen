@@ -5,7 +5,6 @@ class ProgressBar extends React.Component {
 
   // what color should the bar be?
   getColor = (percent) => {
-    console.log(percent);
     if (this.props.percent === 100) return 'green';
     return this.props.percent > 50 ? 'lightgreen' : 'red';
   };
