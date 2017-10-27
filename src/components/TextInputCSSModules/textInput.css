@@ -1,0 +1,15 @@
+/*
+Note how short the selectors are compared to plain CSS.
+With CSS Modules everything is scoped and the class names
+get made unique when the css is imported by webpack.
+ */
+.error {
+    color: red;
+}
+.inputError {
+    border: solid 1px red;
+}
+
+.fieldset {
+    margin-bottom: 16px;
+}
